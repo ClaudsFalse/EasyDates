@@ -38,9 +38,13 @@ struct ContentView: View {
     var body: some View {
         Color(red: 0.98, green: 0.94, blue: 0.84)
             .overlay(
+                NavigationView{
+                    
                 ZStack{
                     
                     VStack{
+                        
+                        Text("Easy Dates")
                         
                         
                         Spacer()
@@ -181,13 +185,29 @@ struct ContentView: View {
                             }
                             .buttonStyle(MainButtonStyle())
                         }
+                        Spacer()
+                     
+                                        NavigationLink(destination: MonthsView()) {
+                                            Text("Months View")
+                                        }
+//                        Button("Months View"){
+//                        }.padding()
+//                            .foregroundColor(Color.black)
+//                            .background(
+//                                RoundedRectangle(cornerSize: CGSize(width: 30, height: 20))
+//                              .fill(Color(red: 0.96, green: 0.75, blue: 0.75))
+//                              .shadow(color: Color.black.opacity(0.2), radius: 2, x: 2, y: 2)
+//                              .shadow(color: Color.white.opacity(0.7), radius: 2, x: -2, y: -2)
+//                            )
                         
                         Spacer()
                     }
                     
                 }
+                }
      )
-    }
+                
+                }
 }
 
 struct ContentView_Previews: PreviewProvider {
