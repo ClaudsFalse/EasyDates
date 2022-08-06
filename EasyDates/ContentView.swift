@@ -44,7 +44,7 @@ struct ContentView: View {
                     
                     VStack{
                         
-                        Text("Easy Dates")
+                        Text("EasyDates")
                             .font(.largeTitle)
                         
                         
